@@ -1,1 +1,1 @@
-// …
+//= require vendor/sly.min.js
