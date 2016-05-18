@@ -1,5 +1,7 @@
 @charset "utf-8";
 @import "normalize-scss/normalize";
+@import "bourbon/app/assets/stylesheets/bourbon";
+@import "neat/app/assets/stylesheets/neat";
 
 main {
   text-align: center;
