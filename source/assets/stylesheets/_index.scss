@@ -4,7 +4,7 @@ section {
   overflow: hidden;
   
   .container {
-    @include outer-container();
+    @include outer-container(1140px);
   }
   
   .row {
@@ -29,6 +29,8 @@ section {
   p {
     display: block;
     @include outer-container(85%);
+    margin-top: 100px;
+    margin-bottom: 100px;
     font-weight: bold;
     font-size: $p-big-font-size;
     line-height: $p-big-line-height;
@@ -36,17 +38,102 @@ section {
   }
 }
 
+.team {
+  .team__profiles {
+    @include outer-container();
+    margin-bottom: 50px;
+    padding: 0;
+    
+    .team-profiles-slider {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: scroll;
+      
+      .profile {
+        width: 570px;
+        float: left;
+//        float: left;
+//        width: 227px;
+        height: 100%;
+        margin: 0 1px 0 0;
+        padding: 0;
+        color: #ddd;
+        text-align: center;
+        cursor: pointer;
+        
+        .profile__image {
+          width: 100px;
+          height: 100px;
+          margin-left: 5%;
+          margin-right: 10px;
+          float: left;
+          border-radius: 100%;
+          background-color: $color-black;
+        }
+        .profile__info {
+          width: 60%;
+          height: 100%;
+          float: left;
+          
+          .profile__name {
+            display: block;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: $h3-font-size;
+            line-height: $h3-line-height;
+            color: $color-black;
+            text-align: left;
+          }
+          .profile__title {
+            display: block;
+            font-weight: normal;
+            font-size: $h3-font-size;
+            line-height: $h3-line-height;
+            color: $color-black;
+            text-align: left;
+          }
+          .profile__tel {
+            display: block;
+            font-weight: normal;
+            font-size: $h3-font-size;
+            line-height: $h3-line-height;
+            color: $color-black;
+            text-align: left;
+            text-decoration: none;
+          }
+          .profile__email {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: $h3-line-height;
+            color: $color-black;
+            text-align: left;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 .more_offers {
-  background-color: $color-gray;
+  background-color: $color-gray-lighter;
   
   .offer_info {
     @include span-columns(4);
+    margin-bottom: 20px;
     
     border: 1px solid $color-gray-light;
     background-color: $color-gray;
   }
   
   h3 {
+    font-size: $h3-big-font-size;
+    line-height: $h3-big-line-height;
+    color: $color-gray-dark;
+    text-align: center;
   }
   
   p {
@@ -55,5 +142,24 @@ section {
     font-size: $p-font-size;
     line-height: $p-line-height;
     color: $color-black;
+  }
+}
+
+footer {
+  @include outer-container(100%);
+  background-color: $color-pink;
+  overflow: hidden;
+  
+  a {
+    display: block;
+    font-weight: normal;
+    font-size: rem(16);
+    line-height: 100%;
+    font-family: $font-family;
+    color: $color-white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
