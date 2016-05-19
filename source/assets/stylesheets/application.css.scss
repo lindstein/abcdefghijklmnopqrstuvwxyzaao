@@ -3,6 +3,8 @@
 @import "bourbon/app/assets/stylesheets/bourbon";
 @import "neat/app/assets/stylesheets/neat";
 
-main {
-  text-align: center;
-}
+@import "shared/colors";
+@import "shared/type";
+
+@import "index";
+

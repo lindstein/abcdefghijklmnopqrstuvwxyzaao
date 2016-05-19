@@ -1,0 +1,14 @@
+$font-family: 'Helvetica','Arial', sans-serif;
+$h1-font-size: rem(60);
+$h1-line-height: rem(75);
+  
+h1 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  font-family: $font-family;
+  color: $color-white;
+  text-align: center;
+  letter-spacing: -2px;
+}
