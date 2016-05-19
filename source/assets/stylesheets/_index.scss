@@ -4,7 +4,11 @@ section {
   overflow: hidden;
   
   .container {
-    @include outer-container(1140px);
+    @include outer-container();
+  }
+  
+  .row {
+    @include row();
   }
 }
 
@@ -29,5 +33,27 @@ section {
     font-size: $p-big-font-size;
     line-height: $p-big-line-height;
     color: $color-gray-dark;
+  }
+}
+
+.more_offers {
+  background-color: $color-gray;
+  
+  .offer_info {
+    @include span-columns(4);
+    
+    border: 1px solid $color-gray-light;
+    background-color: $color-gray;
+  }
+  
+  h3 {
+  }
+  
+  p {
+    display: block;
+    @include outer-container(90%);
+    font-size: $p-font-size;
+    line-height: $p-line-height;
+    color: $color-black;
   }
 }
