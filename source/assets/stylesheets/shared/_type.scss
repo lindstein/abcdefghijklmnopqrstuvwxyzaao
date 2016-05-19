@@ -1,6 +1,13 @@
 $font-family: 'Helvetica','Arial', sans-serif;
+
 $h1-font-size: rem(60);
 $h1-line-height: rem(75);
+
+$p-big-font-size: rem(22);
+$p-big-line-height: rem(36);
+
+$p-font-size: rem(16);
+$p-line-height: rem(26);
   
 h1 {
   font-weight: bold;
@@ -11,4 +18,10 @@ h1 {
   color: $color-white;
   text-align: center;
   letter-spacing: -2px;
+}
+
+p {
+  font-style: normal;
+  font-family: $font-family;
+  text-align: center;
 }

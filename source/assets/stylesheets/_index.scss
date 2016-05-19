@@ -18,3 +18,16 @@ section {
     margin-bottom: 100px;
   }
 }
+
+.offer {
+  background-color: $color-gray;
+  
+  p {
+    display: block;
+    @include outer-container(85%);
+    font-weight: bold;
+    font-size: $p-big-font-size;
+    line-height: $p-big-line-height;
+    color: $color-gray-dark;
+  }
+}
