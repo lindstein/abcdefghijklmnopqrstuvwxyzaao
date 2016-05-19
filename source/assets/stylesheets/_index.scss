@@ -54,8 +54,6 @@ section {
       .profile {
         width: 570px;
         float: left;
-//        float: left;
-//        width: 227px;
         height: 100%;
         margin: 0 1px 0 0;
         padding: 0;
@@ -142,6 +140,38 @@ section {
     font-size: $p-font-size;
     line-height: $p-line-height;
     color: $color-black;
+  }
+}
+
+.clients {
+  .client__profiles {
+    @include outer-container();
+    margin-bottom: 50px;
+    padding: 0;
+    
+    .client-profiles-slider {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: scroll;
+      
+      .client {
+        width: 285px;
+        float: left;
+        height: 100%;
+        margin: 0 1px 0 0;
+        padding: 0;
+        overflow: hidden;
+        
+        img {
+          display: block;
+          width: 90%;
+          height: auto;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
 
