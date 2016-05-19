@@ -13,6 +13,7 @@ $(document).ready(function() {
     scrollSource: $('.team-profiles-slider'),
     scrollTrap:   true,
     scrollBy: 1,
+    pagesBar: $('.team-profiles-wrapper').find('.team_pages'),
     activatePageOn: 'click',
     speed: 300,
     elasticBounds: 1,
@@ -32,6 +33,7 @@ $(document).ready(function() {
     scrollSource: $('.client-profiles-slider'),
     scrollTrap:   true,
     scrollBy: 1,
+    pagesBar: $('.client-profiles-wrapper').find('.client_pages'),
     activatePageOn: 'click',
     speed: 300,
     elasticBounds: 1,
@@ -50,8 +52,13 @@ $(document).ready(function() {
   
   function calculateSliders() {
     sliderWidth = sliderWrapper.width();
-    profile.css('width', Math.round(sliderWidth / 2)+'px');
-    client.css('width', Math.round(sliderWidth / 4)+'px');
+    if (sliderWidth <= 840) {
+      profile.css('width', Math.round(sliderWidth)+'px');
+      client.css('width', Math.round(sliderWidth)+'px');
+    } else {
+      profile.css('width', Math.round(sliderWidth / 2)+'px');
+      client.css('width', Math.round(sliderWidth / 4)+'px');
+    }
     teamSly.reload();
     clientSly.reload();
   }
