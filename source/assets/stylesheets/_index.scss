@@ -1,12 +1,16 @@
+html {
+  border: 5px solid #666;
+}
+
 section {
   @include outer-container(100%);
-  
+
   overflow: hidden;
-  
+
   .container {
     @include outer-container(1140px);
   }
-  
+
   .row {
     @include row();
   }
@@ -17,7 +21,7 @@ section {
 // -----------------------------------------------------------------------------
 .title {
   background-color: $color-pink;
-  
+
   h1 {
     display: block;
     @include outer-container(660px);
@@ -32,7 +36,7 @@ section {
 // -----------------------------------------------------------------------------
 .offer {
   background-color: $color-gray;
-  
+
   p {
     display: block;
     @include outer-container(90%);
@@ -58,21 +62,21 @@ section {
     @include outer-container();
     margin-bottom: 20px;
     padding: 0;
-    
+
     .team-profiles-slider {
       list-style: none;
       margin: 0;
       padding: 0;
       height: 100%;
       overflow-x: scroll;
-      
+
       .profile {
         width: 570px;
         float: left;
         height: 100%;
         margin: 0 1px 0 0;
         padding: 0;
-        
+
         .profile__image {
           width: 100px;
           height: 100px;
@@ -96,7 +100,7 @@ section {
             width: 100%;
             float: none;
           }
-          
+
           .profile__name {
             display: block;
             margin-top: 0;
@@ -143,9 +147,9 @@ section {
             color: $color-black;
             text-align: left;
             text-decoration: none;
-            
+
             @include transition(color .5s linear);
-            
+
             &:hover {
               color: $color-pink;
             }
@@ -165,11 +169,11 @@ section {
 // -----------------------------------------------------------------------------
 .more_offers {
   background-color: $color-gray-lighter;
-  
+
   .offer_info {
     @include span-columns(4);
     margin-bottom: 20px;
-    
+
     border: 1px solid $color-gray-light;
     background-color: $color-gray;
 
@@ -178,14 +182,14 @@ section {
       @include shift(0.5);
     }
   }
-  
+
   h3 {
     font-size: $h3-big-font-size;
     line-height: $h3-big-line-height;
     color: $color-gray-dark;
     text-align: center;
   }
-  
+
   p {
     display: block;
     @include outer-container(90%);
@@ -203,21 +207,21 @@ section {
     @include outer-container();
     margin-bottom: 20px;
     padding: 0;
-    
+
     .client-profiles-slider {
       list-style: none;
       margin: 0;
       padding: 0;
       height: 100%;
       overflow-x: scroll;
-      
+
       .client {
         width: 285px;
         float: left;
         height: 100%;
         margin: 0 1px 0 0;
         padding: 0;
-        
+
         img {
           display: block;
           width: 90%;
@@ -243,7 +247,7 @@ footer {
   @include outer-container(100%);
   background-color: $color-pink;
   overflow: hidden;
-  
+
   a {
     display: block;
     font-weight: normal;
