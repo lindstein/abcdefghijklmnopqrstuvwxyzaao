@@ -7,6 +7,7 @@
     "jquery": "^2.2.3",
     "bourbon": "^4.2.7",
     "neat": "^1.7.4",
-    "sly": "darsain/sly#^1.6.1"
+    "sly": "darsain/sly#^1.6.1",
+    "matchHeight": "matchheight#^0.7.0"
   }
 }

@@ -1,5 +1,6 @@
 //= require jquery/dist/jquery.min.js
 //= require sly/dist/sly.min.js
+//= require matchHeight/dist/jquery.matchHeight-min.js
 
 $(document).ready(function() {
   var teamOptions = {
@@ -21,7 +22,7 @@ $(document).ready(function() {
     dynamicHandle: 1,
     clickBar: 1,
   };
-  
+
   var clientOptions = {
     horizontal: 1,
     itemNav: 'basic',
@@ -41,15 +42,15 @@ $(document).ready(function() {
     dynamicHandle: 1,
     clickBar: 1,
   };
-  
+
   var teamSly = new Sly($('.team-profiles-wrapper'), teamOptions).init();
   var clientSly = new Sly($('.client-profiles-wrapper'), clientOptions).init();
-  
+
   var profile = $('.profile');
   var client = $('.client');
   var sliderWrapper = $('.team-profiles-wrapper');
   var sliderWidth = sliderWrapper.width();
-  
+
   function calculateSliders() {
     sliderWidth = sliderWrapper.width();
     if (sliderWidth <= 840) {
@@ -62,7 +63,10 @@ $(document).ready(function() {
     teamSly.reload();
     clientSly.reload();
   }
-  
+
+  // Set equal heights on offers
+  $('.more_offers .offer_info').matchHeight();
+
   $(window).on('resize', calculateSliders);
   calculateSliders();
 });
