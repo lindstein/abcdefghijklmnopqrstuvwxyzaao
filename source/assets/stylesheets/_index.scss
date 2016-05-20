@@ -2,6 +2,7 @@ html {
   border: 5px solid #666;
 }
 
+header,
 section {
   @include outer-container(100%);
 

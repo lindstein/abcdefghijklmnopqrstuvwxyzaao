@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><%= current_page.data.title || "Title" %></title>
+  <title><%= current_page.data.title || "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö | Digital Text" %></title>
   <%= javascript_include_tag "modernizr" %>
   <%= stylesheet_link_tag "application" %>
 </head>
 <body>
-<!--  <%= partial "partials/navigation" %>-->
-<!--  <%= partial "partials/header" %>-->
-
   <%= yield %>
 
   <%= javascript_include_tag "application" %>
