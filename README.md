@@ -7,6 +7,10 @@ This is the boilerplate for [Kollegornas](https://github.com/kollegorna) Middlem
 3. Clone repository
 4. ``$ npm install && gulp install``
 
+### S3 Bucket
+
+http://abcdefghijklmnopqrstuvwxyzaao.com.s3-website-eu-west-1.amazonaws.com
+
 ### Gulp commands
 
 The following gulp commands are at your service…
